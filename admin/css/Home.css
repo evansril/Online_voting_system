@@ -1,0 +1,73 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: "Trebuchet MS", "Myriad Pro", Arial, sans-serif;
+   font-size: 14px;
+   background-color: #c42727;
+   background-image: url(../images/bg3.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   text-shadow: 1px 1px 1px #fff;
+   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.wrapper {
+   width: 1090px;
+   margin: 10px auto;
+}
+
+.popup {
+   position: fixed;
+   width: 100%;
+   opacity: 0.9;
+   top: 0;
+   min-height: 200px;
+   height: 100%;
+   z-index: 100;
+   background: #FFFFFF;
+   font-size: 20px;
+   text-align: center;
+   /* Add smooth transition for popup visibility changes */
+   transition: opacity 0.5s ease, transform 0.3s ease;
+   /* Initially hidden */
+   display: none;
+}
+
+.popup.active {
+   display: block;
+   opacity: 1;
+   transform: scale(1);
+}
+
+.clock, .date {
+   float: right;
+   margin-right: -10px;
+   font-family: "Century Gothic", sans-serif;
+}
+
+.clock {
+   margin-top: -50px;
+}
+
+.date {
+   margin-top: -20px;
+}
+
+.trans {
+   background: transparent;
+   color: white;
+   border: none;
+   font-size: 17px;
+   font-family: "Century Gothic", sans-serif;
+   cursor: pointer;
+   transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.trans:hover {
+   color: #c42727;
+   background-color: white;
+}
